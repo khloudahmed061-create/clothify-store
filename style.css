@@ -54,7 +54,7 @@ scroll-behavior: smooth;
     background: transparent;
  }
  .hero {
-    background: linear-gradient(rgba(0,0,0,0.6)), rgba(0,0,0,0.6), ur1('https://unplash.com') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6)), rgba(0,0,0,0.6), ur1() no-repeat center center/cover;
     height: 70vh;
     display: flex;
     align-items: center;
@@ -169,9 +169,13 @@ scroll-behavior: smooth;
    border-top: 1px solid #1c1c1c;
 }
 .reviews-grid {
-   display: flex;
-   justify-content : center;
-   gap:40px;
+   display: flex !important;
+    flex-direction:row !important;
+   justify-content : center !important ;
+    align-items: stretch;
+   gap:20px;
+    width:100%;
+    margin:2opx auto;
    flex-wrap: wrap;
 }
 .review-card {
